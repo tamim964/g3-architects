@@ -3,3 +3,63 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ----header start-------- */
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 5px 13px;
+}
+
+.banner {
+    text-align: center;
+    width: 50%;
+    margin: 70px auto 20px auto;
+}
+
+.banner>h1,
+p,
+button {
+    margin-bottom: 15px;
+}
+
+.banner>button {
+    background-color: #FF900E;
+    color: rgba(255, 255, 255, 1);
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.banner-image {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* ----header end-------- */
+
+/* -----media query----- */
+@media screen and (max-width:556px) {
+
+    header nav,
+    header nav>ul {
+        flex-direction: column;
+    }
+}
