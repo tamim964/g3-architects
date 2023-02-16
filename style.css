@@ -8,10 +8,12 @@
 /* ----header start-------- */
 header {
     background-color: rgba(255, 144, 14, 0.1);
-    padding: 15px;
 }
 
 header nav {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -91,7 +93,8 @@ p {
 }
 
 .feature-description h2 {
-    width: 60%;
+    width: 70%;
+    font-size: 35px;
 }
 
 .first-span {
@@ -124,14 +127,15 @@ p {
 
 .blank {
     width: 3px;
-    height: 60px;
+    height: 75px;
     margin-right: 10px;
     background-color: #FF900E;
 }
 
 .enjoy-head h2 {
-    width: 50%;
+    width: 75%;
     font-weight: bold;
+    font-size: 35px;
 }
 
 .enjoy-description {
@@ -175,8 +179,132 @@ p {
     font-size: 35px;
 }
 
+/* -----enjoy end------ */
+/* -------fact start------- */
+.fact {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.fact-heading {
+    width: 40%;
+}
+
+.fact-heading h2 {
+    font-size: 35px;
+}
+
+.fact-parts {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+.fact-parts>div {
+    width: 18%;
+    margin-right: 20px;
+    border: 2px solid #FF900E;
+    padding: 10px;
+    transition: transform .5s;
+}
+
+.fact-parts>div:hover {
+    transform: scale(1.3);
+}
+
+/* -----fact end----- */
+/* contact start------- */
+.contact {
+    width: 100%;
+    background-color: #FFF4E7;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 35px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.contact>div {
+    padding: 20px;
+}
+
+.contact>div>input {
+    width: 25%;
+    padding: 20px;
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.contact>div>textarea {
+    border: 0;
+    width: 50%;
+    height: 100px;
+}
+
+.contact button {
+    width: 48%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* contact end---- */
+/* -------sponsor start------- */
+.sponsors {
+    text-align: center;
+    width: 80%;
+    margin: 90px auto 70px auto;
+}
+
+.sponsors-heading {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.sponsors-heading h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.sponsors-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.sponsors-img img {
+    width: 10%;
+    filter: grayscale(100%);
+}
+
+/* -----sponsor end------ */
+
+
+/* -----footer start------ */
+footer {
+    background-color: #FFF4E7;
+}
+
+footer>p {
+    margin-bottom: 0;
+    padding: 20px;
+    color: rgba(66, 66, 66, 1);
+    text-align: center;
+}
+
 /* -----media query----- */
-@media screen and (max-width:556px) {
+@media screen and (max-width:576px) {
 
     header nav,
     header nav>ul {
@@ -221,4 +349,35 @@ p {
         margin-top: 25px;
         margin-left: 30px;
     }
+
+    .fact-parts {
+        flex-direction: column;
+    }
+
+    .fact-heading {
+        width: 70%;
+    }
+
+    .fact-parts>div {
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .sponsors-img {
+        flex-direction: column;
+    }
+
+    .sponsors-img img {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .contact>div>input {
+        width: 100%;
+    }
+
+    .contact>div>textarea {
+        width: 100%;
+    }
+
 }
